@@ -4,7 +4,7 @@ const Movie = (movie) => {
   return (
     <div>
       <h5>Title</h5>
-      <img src={"https://image.tmdb.org/t/p/w500" + movie.backdrop_path} alt={movie.path} />
+      <img src={"https://image.tmdb.org" + movie.backdrop_path} alt={movie.path} />
     </div>
   );
 };
