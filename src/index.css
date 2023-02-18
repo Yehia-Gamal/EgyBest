@@ -35,7 +35,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #212c39 !important;
+  background-color: #ecf0f0 !important;
   color: var(--text-light);
 }
 
@@ -65,8 +65,7 @@ body {
 }
 
 .main {
-  height: 100vh;
-  overflow: hidden;
+  margin-top: 20px;
 }
 
 .button {
@@ -99,12 +98,13 @@ input:focus {
 }
 
 .navbar {
-  background-color: var(--primary);
+  box-shadow: 1px 0 2px 1px #ddd;
+  background: #f9f9f9;
   z-index: 999;
 }
 
 .navbar a {
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 1.25rem;
   transition: var(--transition);
 }
@@ -115,9 +115,13 @@ input:focus {
 }
 
 .nav-link.active {
-  color: var(--text-dark)!important;
+  color: var(--text-dark) !important;
 }
 
 .navbar-brand {
   font-size: 1.5rem !important;
+}
+
+.navbar form {
+  margin-right: 30px;
 }
