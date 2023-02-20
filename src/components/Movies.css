@@ -40,3 +40,7 @@ article.main-article {
   position: relative;
 }
 
+.emoji {
+  width: 20px;
+  height: 20px;
+}
