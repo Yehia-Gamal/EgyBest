@@ -16,7 +16,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg w-100">
         <div className="container">
           <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            {/* <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
               <li className="nav-item">
                 <NavLink className="nav-link fw-bold" to={"/"}>Movies</NavLink>
               </li>
@@ -29,7 +29,7 @@ const Header = () => {
               <li className="nav-item">
                 <NavLink className="nav-link fw-bold btn btn-outline-success" style={{ lineHeight: 1 }} to={"/add"}>Add</NavLink>
               </li>
-            </ul> */}
+            </ul>
             <form onSubmit={formSubmit} className="d-flex w-75" role="search">
               <input className="form-control me-2" type="search" placeholder="Search for a movie" aria-label="Search" value={searchValue} onChange={(e) => setSearchValue(e.target.value)} />
             </form>
