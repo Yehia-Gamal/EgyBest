@@ -65,7 +65,7 @@ body {
 }
 
 .main {
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .button {
@@ -104,7 +104,7 @@ input:focus {
 }
 
 .navbar a {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--primary);
   font-size: 1.25rem;
   transition: var(--transition);
 }

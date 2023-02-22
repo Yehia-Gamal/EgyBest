@@ -18,8 +18,12 @@
 
 .results {
   margin: 20px;
-  height: 80vh;
+  height: auto;
+  background-color: white;
   overflow: auto;
+  position: absolute;
+  top: 50px;
+  direction: ltr;
 }
 
 .add-content h2 {
