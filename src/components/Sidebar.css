@@ -1,3 +1,10 @@
+.sidbar {
+  direction: rtl;
+  position: fixed;
+  top: 100px;
+  right: 20px;
+}
+
 .pages-box {
   width: 170px;
   top: 70px;

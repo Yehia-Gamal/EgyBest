@@ -24,9 +24,8 @@
   padding: 10px !important;
   border-radius: 6px;
   overflow: auto;
-  position: absolute;
-  top: 50px;
-  direction: ltr;
+
+  /* direction: ltr; */
 }
 
 .add-content h2 {

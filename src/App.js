@@ -12,7 +12,6 @@ function App() {
     <>
       <Header />
       <div className='main-page container'>
-        <Sidebar />
         <div className='col-lg-10 col-md-12 col-sm-12'>
           <ContextProvider>
             <Routes>
@@ -23,8 +22,8 @@ function App() {
               <Route path='/*' element={<h1><a href="/">Error Page Back To Home</a></h1>} />
             </Routes>
           </ContextProvider>
-
         </div>
+        <Sidebar />
       </div>
     </>
   );
