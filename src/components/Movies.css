@@ -22,3 +22,9 @@ article.main-article {
   align-items: center;
   justify-content: space-between;
 }
+
+@media (max-width: 767px) {
+  .title-heading {
+    font-size: 25px[];
+  }
+}

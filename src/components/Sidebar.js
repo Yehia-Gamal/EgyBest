@@ -4,7 +4,7 @@ import anime from "./images/anime.png"
 
 const Sidebar = () => {
   return (
-    <div className="pull-right col-lg-2 col-md-2 col-sm-12">
+    <div className="sidbar col-lg-2 col-md-2 col-sm-12">
       <div className="pages-box">
         <ul className="list-pages list-unstyled m-0">
           <li>

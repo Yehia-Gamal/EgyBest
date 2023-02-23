@@ -20,6 +20,7 @@ function App() {
               <Route path='/add' element={<Add />} />
               <Route path='/watchlist' element={<WatchList />} />
               <Route path='/watched' element={<Watched />} />
+              <Route path='/*' element={<h1><a href="/">Error Page Back To Home</a></h1>} />
             </Routes>
           </ContextProvider>
 
