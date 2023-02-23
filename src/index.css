@@ -64,8 +64,10 @@ body {
   }
 }
 
-.main {
-  /* margin-top: 20px; */
+.main-page {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .button {

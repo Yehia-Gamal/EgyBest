@@ -39,9 +39,9 @@ const Header = () => {
               <li className="nav-item">
                 <NavLink className="nav-link fw-bold" to={"/watched"}>Watched</NavLink>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink className="nav-link fw-bold btn btn-outline-success" style={{ lineHeight: 1 }} to={"/add"}>Add</NavLink>
-              </li>
+              </li> */}
             </ul>
             <form onSubmit={formSubmit} className="d-flex w-50" role="search">
               <input className="form-control me-2" type="search" placeholder="Search for a movie" aria-label="Search" value={searchValue} onChange={(e) => setSearchValue(e.target.value)} />
