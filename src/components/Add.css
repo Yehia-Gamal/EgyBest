@@ -19,7 +19,10 @@
 .results {
   margin: 20px;
   height: auto;
+  max-height: 80vh;
   background-color: white;
+  padding: 10px !important;
+  border-radius: 6px;
   overflow: auto;
   position: absolute;
   top: 50px;
@@ -30,9 +33,9 @@
   color: var(--text-dark);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .results {
-    padding: 0;
+    top: 225px;
   }
 
   .result-card .info .controls {

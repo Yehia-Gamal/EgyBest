@@ -26,10 +26,17 @@ const Header = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg w-100">
-        <div className="container">
-          <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <Link className="navbar-brand" to={"/"}><img src={logo} alt="EgyBest-logo" /></Link>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form onSubmit={formSubmit} className="d-flex w-50" role="search">
+              <input className="form-control me-2" type="search" placeholder="Search for a movie" aria-label="Search" value={searchValue} onChange={(e) => setSearchValue(e.target.value)} />
+            </form>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <NavLink className="nav-link fw-bold" to={"/"}>Movies</NavLink>
               </li>
@@ -39,13 +46,7 @@ const Header = () => {
               <li className="nav-item">
                 <NavLink className="nav-link fw-bold" to={"/watched"}>Watched</NavLink>
               </li>
-              {/* <li className="nav-item">
-                <NavLink className="nav-link fw-bold btn btn-outline-success" style={{ lineHeight: 1 }} to={"/add"}>Add</NavLink>
-              </li> */}
             </ul>
-            <form onSubmit={formSubmit} className="d-flex w-50" role="search">
-              <input className="form-control me-2" type="search" placeholder="Search for a movie" aria-label="Search" value={searchValue} onChange={(e) => setSearchValue(e.target.value)} />
-            </form>
 
             {
               movies.length > 0 && <ul className='results'>
@@ -56,9 +57,10 @@ const Header = () => {
             }
 
           </div>
-          <Link className="navbar-brand" to={"/"}><img src={logo} alt="EgyBest-logo" /></Link>
         </div>
       </nav>
+
+
     </>
   );
 }
