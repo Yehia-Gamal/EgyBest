@@ -1,28 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import logo from "./images/logo.png"
 
-import axios from 'axios';
-import { useEffect, useState } from 'react';
-import "./Add.css"
-import ResultCard from './ResultCard';
-
 const Header = () => {
-
-  const formSubmit = (e) => {
-    e.preventDefault()
-  }
-
-  const [searchValue, setSearchValue] = useState("")
-  const [movies, setMovies] = useState([])
-
-  useEffect(() => {
-    axios.get(`https://www.omdbapi.com/?s=${searchValue}&apikey=f9251b2d`).then((response) => {
-      if (response.data.Search) {
-        setMovies(response.data.Search)
-      }
-    }).catch((error) => console.log(error))
-  }, [searchValue])
-
 
   return (
     <>
@@ -46,14 +25,6 @@ const Header = () => {
                 <NavLink className="nav-link fw-bold" to={"/watched"}>Watched</NavLink>
               </li>
             </ul>
-
-            {
-              movies.length > 0 && <ul className='results'>
-                {movies.map((movie) => (<li key={movie.imdbID}>
-                  {<ResultCard movie={movie} />}
-                </li>))}
-              </ul>
-            }
 
           </div>
         </div>
