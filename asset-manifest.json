@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/EgyBest/static/css/main.e01630b0.css",
-    "main.js": "/EgyBest/static/js/main.ca88b7ae.js",
+    "main.js": "/EgyBest/static/js/main.9eb2dddb.js",
     "index.html": "/EgyBest/index.html",
     "main.e01630b0.css.map": "/EgyBest/static/css/main.e01630b0.css.map",
-    "main.ca88b7ae.js.map": "/EgyBest/static/js/main.ca88b7ae.js.map"
+    "main.9eb2dddb.js.map": "/EgyBest/static/js/main.9eb2dddb.js.map"
   },
   "entrypoints": [
     "static/css/main.e01630b0.css",
-    "static/js/main.ca88b7ae.js"
+    "static/js/main.9eb2dddb.js"
   ]
 }
