@@ -15,7 +15,7 @@ function App() {
         <div className='col-lg-10 col-md-12 col-sm-12'>
           <ContextProvider>
             <Routes>
-              <Route path='/' element={<Movies />} />
+              <Route path='/EgyBest' element={<Movies />} />
               <Route path='/add' element={<Add />} />
               <Route path='/watchlist' element={<WatchList />} />
               <Route path='/watched' element={<Watched />} />
