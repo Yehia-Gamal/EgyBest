@@ -2,7 +2,9 @@
 
 # EgyBest React App
 
-Open [https://github.com/Yehia-Gamal/EgyBest](https://github.com/Yehia-Gamal/EgyBest) to view it in your browser.
+Open [https://yehia-gamal.github.io/EgyBest](https://yehia-gamal.github.io/EgyBest) to view it in your browser.
+
+<img src="public/egy_best.jpg" alt="img-website-app">
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
